@@ -1,14 +1,3 @@
-//create a header
-//add 1st event listener DOMContentLoaded
-//fetch the weather of a specific city or lat,long
-// to allow we need a dom element that has our 2nd event listener "click"
-// this btn should fetch(GET) a specific city or lat,long. input city || input lat + input long
-// it should take that fetched data and return it onto the dom below
-// *bonus* we update our db with json that records the search history
-
-//the 3rd event listener will be a simple comment section
-//thinking top right of screen as a "chat" like structure
-
 const header = document.createElement("div");
 header.className = "header";
 header.id = "header";
