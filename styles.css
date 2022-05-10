@@ -16,6 +16,7 @@ body {
 }
 
 .container {
+  position: relative;
   width: 75%;
   display: flex;
   flex-wrap: wrap;
@@ -31,34 +32,15 @@ body {
   padding: 0.05%;
 }
 
-#lat-input {
-  width: 20%;
-  margin-left: 25%;
-}
-
-#long-input {
-  width: 20%;
-  margin-inline-start: 9%;
-}
-
 .buttons {
   width: 5%;
   margin-inline-start: 47%;
   margin-top: 1%;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-between;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 1%;
-}
-
 .cards {
   text-align: center;
+  backface-visibility: hidden;
   font-variant: small-caps;
   background: steelblue;
   padding-top: 1em;
