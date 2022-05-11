@@ -64,10 +64,13 @@ body {
 }
 
 .cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 420px;
   text-align: center;
   font-variant: small-caps;
-  padding-top: 1em;
-  padding-bottom: 2em;
+
   border-radius: 10%;
   margin: 1%;
   width: 30%;
@@ -75,14 +78,13 @@ body {
   background: #000000e1;
   color: white;
 
-  font-size: 20px;
+  font-size: 25px;
   text-transform: capitalize;
   font-family: monospace;
+}
 
-  perspective: 1000px;
-  transform-style: preserve-3d;
-  transform: inherit;
-  z-index: 1;
+.back {
+  height: 420px;
 }
 
 .search-inputs {
@@ -96,12 +98,12 @@ body {
 
 #back-text {
   width: 90%;
-  height: 420px;
   max-width: 90%;
+  height: 80%;
   background-color: #ece63d;
   resize: none;
   font-size: larger;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 #search-btn {
@@ -136,7 +138,7 @@ body {
   margin: auto;
   transition: 0.15s ease-in-out;
   outline: dotted white 0.25px;
-  margin-top: 5%;
+  margin-top: 1%;
   color: white;
 }
 

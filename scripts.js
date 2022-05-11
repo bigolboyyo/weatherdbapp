@@ -107,15 +107,14 @@ function weatherSearch(e, userInput) {
   <button id="front-btn">Flip</button>
   `;
 
-  let notesBtn = document.getElementById("notes-btn");
+  let notesBtn = front.querySelector("#notes-btn");
   notesBtn.addEventListener("click", handleFrontClick);
-  console.log(notesBtn);
 
   function handleFrontClick(e) {
     e.target.parentNode.remove();
     card.appendChild(back);
 
-    let frontBtn = document.getElementById("front-btn");
+    let frontBtn = back.querySelector("#front-btn");
     frontBtn.addEventListener("click", (e) => {
       e.target.parentNode.remove();
       card.appendChild(front);
