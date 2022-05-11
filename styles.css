@@ -1,4 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  padding-top: 1%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,16 +14,33 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header {
   height: 30%;
-  width: 100%;
+  width: 50%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  background: #000000d0;
+  color: white;
+  border-radius: 0 25%;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  font-family: monospace;
+}
+
+#h1 {
+  font-size: 40px;
+}
+
+#p1 {
+  font-size: 15px;
   padding-bottom: 1%;
 }
 
 .container {
-  position: relative;
   width: 75%;
   display: flex;
   flex-wrap: wrap;
@@ -30,6 +54,7 @@ body {
   margin-inline-start: 25%;
   width: 50%;
   padding: 0.05%;
+  font-size: larger;
 }
 
 .buttons {
@@ -40,12 +65,89 @@ body {
 
 .cards {
   text-align: center;
-  backface-visibility: hidden;
   font-variant: small-caps;
-  background: steelblue;
   padding-top: 1em;
   padding-bottom: 2em;
-  border-radius: 30px;
+  border-radius: 10%;
   margin: 1%;
   width: 30%;
+  outline: solid black 5px;
+  background: #000000e1;
+  color: white;
+
+  font-size: 20px;
+  text-transform: capitalize;
+  font-family: monospace;
+
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transform: inherit;
+  z-index: 1;
+}
+
+.search-inputs {
+  border: none;
+  outline: double black;
+  color: white;
+  height: 2.5em;
+  background-color: #7c7c7c2b;
+  padding: 1em;
+}
+
+#back-text {
+  width: 90%;
+  height: 420px;
+  max-width: 90%;
+  background-color: #ece63d;
+  resize: none;
+  font-size: larger;
+  margin-top: 2%;
+}
+
+#search-btn {
+  border: none;
+  outline: none;
+  height: 35px;
+  width: 45px;
+  background: #7c7c7c2b;
+  border-radius: 25%;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+  margin-top: 2%;
+}
+
+#notes-btn {
+  background: #ece63dd0;
+  width: 75px;
+  height: 35px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: auto;
+  transition: 0.15s ease-in-out;
+  outline: dotted white 0.25px;
+}
+
+#front-btn {
+  background: #7c7c7c2b;
+  width: 75px;
+  height: 35px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: auto;
+  transition: 0.15s ease-in-out;
+  outline: dotted white 0.25px;
+  margin-top: 5%;
+  color: white;
+}
+
+#front-btn:hover {
+  background: #7c7c7c7b;
+}
+
+#notes-btn:hover {
+  background: #ece63d;
+}
+
+#search-btn:hover {
+  background: #7c7c7c7b;
 }
