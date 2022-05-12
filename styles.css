@@ -29,6 +29,7 @@ body {
   border-top-left-radius: 10%;
   border-bottom-right-radius: 10%;
   font-family: monospace;
+  margin-top: 2%;
 }
 
 #h1 {
@@ -41,6 +42,7 @@ body {
 }
 
 .container {
+  margin-top: 3%;
   width: 75%;
   display: flex;
   flex-wrap: wrap;
@@ -78,7 +80,7 @@ body {
   background: #000000e1;
   color: white;
 
-  font-size: 25px;
+  font-size: 30px;
   text-transform: capitalize;
   font-family: monospace;
 }
@@ -118,6 +120,21 @@ body {
   margin-top: 2%;
 }
 
+#dlt-btn {
+  transform: translate(300%);
+  width: 30px;
+  height: 30px;
+  padding-right: 1px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+  background: #716c6cc2;
+}
+
+#dlt-btn:hover {
+  background: rgb(201, 76, 76);
+}
+
 #notes-btn {
   background: #ece63dd0;
   width: 75px;
@@ -147,7 +164,7 @@ body {
 }
 
 #notes-btn:hover {
-  background: #ece63d;
+  background: yellow;
 }
 
 #search-btn:hover {

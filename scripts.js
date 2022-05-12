@@ -82,6 +82,7 @@ function weatherSearch(e, userInput) {
   front.className = "front";
 
   front.innerHTML = `
+  <button id="dlt-btn" class="buttons">❌</button>
   <h1>${userInput.toUpperCase()}</h1>
   <p>Time: ${weatherValues[0]}</p>
   <li id="comment">Comment: ${weatherValues[6]}</li>
@@ -94,6 +95,11 @@ function weatherSearch(e, userInput) {
   `;
 
   card.append(front);
+
+  const cardDltBtn = front.querySelector("#dlt-btn");
+  cardDltBtn.addEventListener("click", (e) => {
+    card.remove();
+  });
 
   const back = document.createElement("div");
   back.id = `${userInput}-back`;
