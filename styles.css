@@ -23,7 +23,8 @@ body {
   width: 50%;
   padding-bottom: 1%;
   padding-top: 1%;
-  background: #000000d0;
+  /*background: #000000d0;*/
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   border-radius: 0 25%;
   border-top-left-radius: 10%;
@@ -39,6 +40,7 @@ body {
 #p1 {
   font-size: 15px;
   padding-bottom: 1%;
+  padding-top: 2%;
 }
 
 .container {

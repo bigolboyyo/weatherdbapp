@@ -3,6 +3,7 @@ const body = document.getElementsByTagName("body");
 const unsplashRandom =
   "https://source.unsplash.com/random/1920x1080/?landscapes";
 document.body.style.backgroundImage = `url(${unsplashRandom})`;
+//FIXME: on persist how will this function?
 
 const header = document.createElement("div");
 header.className = "header";
